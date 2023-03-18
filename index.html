@@ -9,29 +9,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="menu" >
-        <div class="toggle"></div>
-        <li>
-            <a href="#"><ion-icon name="home-outline"></ion-icon></a>
-        </li>
-        <li>
-            <a href="#"><ion-icon name="basketball-outline"></ion-icon></a>
-        </li>
-        <li>
-            <a href="#"><ion-icon name="fast-food-outline"></ion-icon></a>
-        </li>  
-        <li>
-            <a href="#"><ion-icon name="paw-outline"></ion-icon></a>
-        </li>
-        <li>
-            <a href="#"><ion-icon name="people-outline"></ion-icon></a>
-        </li>     
+    <div class="container">
+        <header>
+            <p>Hello world!</p>
+        </header>
+        <div class="menu" >
+            <div class="toggle"><ion-icon name="add-outline"></ion-icon></div>
+            <li style="--i:0">
+                <a href="#"><ion-icon name="home-outline" style="font-size: 40px;"></ion-icon></a>
+            </li>
+            <li style="--i:1">
+                <a href="#"><ion-icon name="basketball-outline" style="font-size: 40px;"></ion-icon></a>
+            </li>
+            <li style="--i:2">
+                <a href="#"><ion-icon name="fast-food-outline" style="font-size: 40px;"></ion-icon></a>
+            </li>  
+            <li style="--i:3">
+                <a href="#"><ion-icon name="paw-outline" style="font-size: 40px;"></ion-icon></a>
+            </li>
+            <li style="--i:4">
+                <a href="#"><ion-icon name="people-outline" style="font-size: 40px;"></ion-icon></a>
+            </li>     
+        </div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
 
     </script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
 
+    </script>
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menu');
+        toggle.onclick = function() {
+            menu.classList.toggle('active');
+        }
     </script>
 </body>
 </html>
