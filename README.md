@@ -1,5 +1,5 @@
 # HACKATHON2023-brain.isEmpty
-Norbi vagyok
+Marosi Norbert
 
 Peter Akos
 
