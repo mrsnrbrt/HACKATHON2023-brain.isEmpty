@@ -42,7 +42,7 @@ body {
     list-style: none;
     transform-origin: 200px;
     transition: 0.5s;
-    transition-delay: calc(0.1s * var(--i));
+    transition-delay: calc(0.3s * var(--i));
     transform: rotate(0deg) translateX(160px);
 }
 
@@ -79,7 +79,7 @@ body {
     cursor: pointer;
     box-shadow: 0 0 0 black;
     font-size: 3em;
-    transition: transform 1.25s;
+    transition: transform 3s;
 }
 
 .menu.active .toggle {
