@@ -71,3 +71,22 @@ body{
 .menu.active .toggle{
     transform: rotate(315deg);
 }
+
+.header {
+    background-color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
