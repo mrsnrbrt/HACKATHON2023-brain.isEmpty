@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Regisztráció</title>
+	<style>
+		.form {
+			margin: 50px auto;
+			width: 300px;
+			padding: 20px;
+			background-color: #f2f2f2;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px #999;
+		}
+
+		input[type="text"], input[type="email"], input[type="password"] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+
+		h2 {
+			text-align: center;
+			color: #333;
+		}
+
+		label {
+			font-weight: bold;
+			color: #555;
+		}
+	</style>
+  </head>
+  <body>
+    <h1>Regisztráció</h1>
+    <form>
+      <label for="name">Név:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-mail cím:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Jelszó:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirm-password">Jelszó újra:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+
+      <input type="checkbox" id="agree" name="agree" required>
+      <label for="agree">Elfogadom az <a href="#">Általános Szerződési Feltételeket</a></label>
+
+      <input type="submit" value="Regisztráció">
+    </form>
+  </body>
+</html>

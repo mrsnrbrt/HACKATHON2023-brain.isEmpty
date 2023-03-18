@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bejelentkezés</title>
+	<style>
+		.form {
+			margin: 50px auto;
+			width: 300px;
+			padding: 20px;
+			background-color: #f2f2f2;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px #999;
+		}
+
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+
+		h2 {
+			text-align: center;
+			color: #333;
+		}
+
+		label {
+			font-weight: bold;
+			color: #555;
+		}
+	</style>
+</head>
+<body>
+	<div class="form">
+		<h2>Bejelentkezés</h2>
+		<form>
+			<label for="felhasznalo">Felhasználónév:</label><br>
+			<input type="text" id="felhasznalo" name="felhasznalo" required><br>
+			<label for="jelszo">Jelszó:</label><br>
+			<input type="password" id="jelszo" name="jelszo" required><br><br>
+			<input type="submit" value="Bejelentkezés">
+		</form>
+		<p>Nincs még fiókod? <a href="regiszter.html">Regisztrálj itt!</a></p>
+	</div>
+</body>
+</html>
