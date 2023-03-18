@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Kosárlabdacsapatok</title>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			padding: 5px;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<h1>Kosárlabdacsapatok</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Név</th>
+				<th>Város</th>
+				<th>Játékosok száma</th>
+			</tr>
+		</thead>
+		<tbody id="team-list">
+		</tbody>
+	</table>
+
+	<script>
+		// JSON adatok betöltése
+		fetch('példa.json')
+		  .then(response => response.json())
+		  .then(data => {
+		  	// Táblázat feltöltése adatokkal
+		  	data.forEach(team => {
+		  		let row = document.createElement('tr');
+		  		row.innerHTML = `
+		  			<td>${team.name}</td>
+		  			<td>${team.city}</td>
+		  			<td>${team.players}</td>
+		  		`;
+		  		document.getElementById('team-list').appendChild(row);
+		  	});
+		  });
+	</script>
+</body>
+</html>
