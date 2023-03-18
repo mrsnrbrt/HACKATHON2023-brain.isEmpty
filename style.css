@@ -1,19 +1,18 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(45deg,#b3ffb3, #ccffff);
+    background: linear-gradient(45deg, #b3ffb3, #ccffff);
 }
 
-.menu{
+.menu {
     position: relative;
     width: 400px;
     height: 400px;
@@ -22,7 +21,7 @@ body{
     align-items: center;
 }
 
-.menu li{
+.menu li {
     position: absolute;
     left: 0;
     list-style: none;
@@ -32,11 +31,11 @@ body{
     transform: rotate(0deg) translateX(160px);
 }
 
-.menu.active li{
+.menu.active li {
     transform: rotate(calc(360deg / 5 * var(--i)));
 }
 
-.menu li a{
+.menu li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,14 +44,14 @@ body{
     background: white;
     border-radius: 50%;
     transform: rotate(calc(360deg / -5 * var(--i)));
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15); 
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
 }
 
-.menu li a:hover{
+.menu li a:hover {
     color: green;
 }
 
-.toggle{
+.toggle {
     position: absolute;
     width: 80px;
     height: 80px;
@@ -68,12 +67,12 @@ body{
     transition: transform 1.25s;
 }
 
-.menu.active .toggle{
+.menu.active .toggle {
     transform: rotate(315deg);
 }
 
 .header {
-    background-color: white;
+    background-color:linear-gradient(45deg, #b3ffb3, #ccffff);
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -84,28 +83,27 @@ body{
     right: 0;
     z-index: 9999;
     padding: 0 20px;
-  }
-  
-  .header h1 {
+}
+
+.header h1 {
     font-size: 24px;
     color: #333;
     margin: 0;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  nav li {
+}
+
+nav li {
     margin: 0 10px;
-  }
-  
-  nav a {
+}
+
+nav a {
     text-decoration: none;
     color: #333;
     font-size: 18px;
-  }
-  
+}
