@@ -89,32 +89,20 @@
 		<div class="select-wrapper">
 			<label for="select-data">Adatok lekérdezése:</label>
 			<select id="select-data">
-<<<<<<< HEAD
 				<option value="name">Name</option>
 				<option value="full_name">Full Name</option>
 				<option value="city">City</option>
 				<option value="division">Division </option>
-=======
-				<option value="name">Név</option>
-				<option value="city">Város</option>
-				<option value="players">Játékosok száma</option>
->>>>>>> eddcb961461933ab55dbf5571562706a7b6d83d5
 			</select>
 		</div>
 
 		<table>
 			<thead>
 				<tr>
-<<<<<<< HEAD
 					<th>Name</th>
 					<th>Full Name</th>
 					<th>City</th>
 					<th>Division</th>
-=======
-					<th>Név</th>
-					<th>Város</th>
-					<th>Játékosok száma</th>
->>>>>>> eddcb961461933ab55dbf5571562706a7b6d83d5
 				</tr>
 			</thead>
 			<tbody id="team-list">
@@ -127,7 +115,6 @@
 		fetch('basketball.json')
 // Az adatok elérése
 .then(response => response.json())
-<<<<<<< HEAD
 .then(json => {
     console.log(json);
 // Alapértelmezett adatkategória beállítása
@@ -136,25 +123,10 @@ let selectedData = 'name';
 
 		// Az adatok alapján táblázat generálása
 		function renderTable(json, selectedData) {
-=======
-.then(data => {
-    console.log(data);
-// Alapértelmezett adatkategória beállítása
-let selectedData = 'name';
-		// A legördülő menü változtatása esetén az adatok frissítése
-		document.getElementById('select-data').addEventListener('change', function() {
-			selectedData = this.value;
-			renderTable(data, selectedData);
-		});
-
-		// Az adatok alapján táblázat generálása
-		function renderTable(data, selectedData) {
->>>>>>> eddcb961461933ab55dbf5571562706a7b6d83d5
 			// Táblázat tartalmának ürítése
 			document.getElementById('team-list').innerHTML = '';
 
 			// Adatok végigjárása és sorok hozzáadása a táblázathoz
-<<<<<<< HEAD
 			json.data.forEach(team => {
 				const row = document.createElement('tr');
 				row.innerHTML = `
@@ -162,19 +134,10 @@ let selectedData = 'name';
 					<td>${team.full_name}</td>
 					<td>${team.city}</td>
 					<td>${team.division}</td>
-=======
-			data.forEach(team => {
-				const row = document.createElement('tr');
-				row.innerHTML = `
-					<td>${team.name}</td>
-					<td>${team.city}</td>
-					<td>${team.players}</td>
->>>>>>> eddcb961461933ab55dbf5571562706a7b6d83d5
 				`;
 				document.getElementById('team-list').appendChild(row);
 			});
 		}
-<<<<<<< HEAD
 		// A legördülő menü változtatása esetén az adatok frissítése
 		document.getElementById('select-data').addEventListener('change', function() {
 			selectedData = this.value;
@@ -182,11 +145,6 @@ let selectedData = 'name';
 		});
 		// Táblázat inicializálása
 		renderTable(json, selectedData);
-=======
-
-		// Táblázat inicializálása
-		renderTable(data, selectedData);
->>>>>>> eddcb961461933ab55dbf5571562706a7b6d83d5
 	})
 	.catch(error => console.error(error));
 </script>
