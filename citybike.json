@@ -1,0 +1,355 @@
+{
+    "networks": [
+    {
+    "company":
+    "ЗАО «СитиБайк»",
+    "href": "/v2/networks/velobike-moscow",
+    "id": "velobike-moscow",
+    "city": "Moscow",
+    "country": "RU",
+    "latitude": 55.75,
+    "longitude": 37.616667,
+    "name": "Velobike"
+    },
+    {
+    "company": 
+    "Urban Infrastructure Partner",
+    "href": "/v2/networks/baerum-bysykkel",
+    "id": "baerum-bysykkel",
+    "city": "Bærum",
+    "country": "NO",
+    "latitude": 59.89455,
+    "longitude": 10.546343,
+    "name": "Bysykkel"
+    },
+    {
+    "company": 
+    "Comunicare S.r.l.",
+    "href": "/v2/networks/bicincitta-siena",
+    "id": "bicincitta-siena",
+    "city": "Siena",
+    "country": "IT",
+    "latitude": 43.3186,
+    "longitude": 11.3306,
+    "name": "Bicincittà",
+    "source": "https://www.bicincitta.com/frmLeStazioni.aspx?ID=202"
+    },
+    {
+    "company":
+    "Cyclopolis Systems",
+    "href": "/v2/networks/cyclopolis-maroussi",
+    "id": "cyclopolis-maroussi",
+    "city": "Maroussi",
+    "country": "GR",
+    "latitude": 38.0568722388,
+    "longitude": 23.8083299536,
+    "name": "Cyclopolis"
+    },
+    {
+    "company":
+    "Groundwork",
+    "href": "/v2/networks/cycle-hire-slough",
+    "id": "cycle-hire-slough",
+    "city": "Slough",
+    "country": "GB",
+    "latitude": 51.51135,
+    "longitude": -0.591562,
+    "name": "Cycle Hire"
+    },
+    {
+    "company":
+    "Cyclopolis Systems",
+    "href": "/v2/networks/cyclopolis-nafplio",
+    "id": "cyclopolis-nafplio",
+    "city": "Nafplio",
+    "country": "GR",
+    "latitude": 37.5639397319,
+    "longitude": 22.8093402872,
+    "name": "Cyclopolis"
+    },
+    {
+    "company":
+    "Comunicare S.r.l.",
+    "href": "/v2/networks/bicincitta-parco-dei-colli-di-bergamo",
+    "id": "bicincitta-parco-dei-colli-di-bergamo",
+    "city": "Parco dei Colli di Bergamo",
+    "country": "IT",
+    "latitude": 45.72295637032245,
+    "longitude": 9.649230073016383,
+    "name": "Bicincittà",
+    "source": "https://www.bicincitta.com/frmLeStazioni.aspx?ID=203"
+    },
+    {
+    "company":
+    "Cyclopolis Systems",
+    "href": "/v2/networks/cyclopolis-aigialeia",
+    "id": "cyclopolis-aigialeia",
+    "city": "Aigialeia",
+    "country": "GR",
+    "latitude": 38.2511101325,
+    "longitude": 22.0821570196,
+    "name": "Cyclopolis"
+    },
+    {
+    "company":
+    "Cyclopolis Systems",
+    "href": "/v2/networks/cyclopolis-marathon",
+    "id": "cyclopolis-marathon",
+    "city": "Marathon",
+    "country": "GR",
+    "latitude": 38.0855680022,
+    "longitude": 23.9776389963,
+    "name": "Cyclopolis"
+    },
+    {
+    "company":
+    "Comunicare S.r.l.",
+    "href": "/v2/networks/bicincitta-mantova",
+    "id": "bicincitta-mantova",
+    "city": "Mantova",
+    "country": "IT",
+    "latitude": 45.15866370764634,
+    "longitude": 10.783718973016335,
+    "name": "Bicincittà",
+    "source": "https://www.bicincitta.com/frmLeStazioni.aspx?ID=204"
+    },
+    {
+    "company":
+    "Cyclopolis Systems",
+    "href": "/v2/networks/cyclopolis-neasmyrni",
+    "id": "cyclopolis-neasmyrni",
+    "city": "Νea Smyrni",
+    "country": "GR",
+    "latitude": 37.9381,
+    "longitude": 23.7126,
+    "name": "Cyclopolis"
+    },
+    {
+    "company":
+    "Cyclopolis Systems",
+    "href": "/v2/networks/cyclopolis-moschatotavros",
+    "id": "cyclopolis-moschatotavros",
+    "city": "Μoschato-Tavros",
+    "country": "GR",
+    "latitude": 37.9538991434,
+    "longitude": 23.6824746661,
+    "name": "Cyclopolis"
+    },
+    {
+    "company":
+    "Cyclopolis Systems",
+    "href": "/v2/networks/cyclopolis-arxaiaolympia",
+    "id": "cyclopolis-arxaiaolympia",
+    "city": "Αrxaia Olympia",
+    "country": "GR",
+    "latitude": 37.6419700934,
+    "longitude": 21.6247265179,
+    "name": "Cyclopolis"
+    },
+    {
+    "company":
+    "Cyclopolis Systems",
+    "href": "/v2/networks/cyclopolis-kiato",
+    "id": "cyclopolis-kiato",
+    "city": "Kιato",
+    "country": "GR",
+    "latitude": 38.0132674508,
+    "longitude": 22.7493819902,
+    "name": "Cyclopolis"
+    },
+    {
+    "company":
+    "Comunicare S.r.l.",
+    "href": "/v2/networks/bicincitta-assemini",
+    "id": "bicincitta-assemini",
+    "city": "Assemini",
+    "country": "IT",
+    "latitude": 39.28956306007679,
+    "longitude": 9.006601555294765,
+    "name": "Bicincittà",
+    "source": "https://www.bicincitta.com/frmLeStazioni.aspx?ID=205"
+    },
+    {
+    "company":
+    "Cyclopolis Systems",
+    "href": "/v2/networks/cyclopolis-rhodes",
+    "id": "cyclopolis-rhodes",
+    "city": "Rhodes",
+    "country": "GR",
+    "latitude": 36.4509118,
+    "longitude": 28.2246966,
+    "name": "Cyclopolis"
+    },
+    {
+    "company":
+    "Cyclopolis Systems",
+    "href": "/v2/networks/cyclopolis-florina",
+    "id": "cyclopolis-florina",
+    "city": "Florina",
+    "country": "GR",
+    "latitude": 40.8016111,
+    "longitude": 21.4245222,
+    "name": "Cyclopolis"
+    },
+    {
+    "company":
+    "Comunicare S.r.l.",
+    "href": "/v2/networks/bicincitta-tortoli",
+    "id": "bicincitta-tortoli",
+    "city": "Tortolì",
+    "country": "IT",
+    "latitude": 39.92664489852196,
+    "longitude": 9.654953570777934,
+    "name": "Bicincittà",
+    "source": "https://www.bicincitta.com/frmLeStazioni.aspx?ID=206"
+    },
+    {
+    "company":
+    "Cyclopolis Systems",
+    "href": "/v2/networks/cyclopolis-limnos",
+    "id": "cyclopolis-limnos",
+    "city": "Limnos",
+    "country": "GR",
+    "latitude": 39.8747861,
+    "longitude": 25.0586722,
+    "name": "Cyclopolis"
+    },
+    {
+    "company":
+    "Comunicare S.r.l.",
+    "href": "/v2/networks/bicincitta-gaeta",
+    "id": "bicincitta-gaeta",
+    "city": "Gaeta",
+    "country": "IT",
+    "latitude": 41.209620965538036,
+    "longitude": 13.584335125656139,
+    "name": "Bicincittà",
+    "source": "https://www.bicincitta.com/frmLeStazioni.aspx?ID=207"
+    },
+    {
+    "company":
+    "Comunicare S.r.l.",
+    "href": "/v2/networks/bicincitta-borgarello",
+    "id": "bicincitta-borgarello",
+    "city": "Borgarello",
+    "country": "IT",
+    "latitude": 45.23963753440171,
+    "longitude": 9.136150475640875,
+    "name": "Bicincittà",
+    "source": "https://www.bicincitta.com/frmLeStazioni.aspx?ID=208"
+    },
+    {
+    "company":
+    "Comunicare S.r.l.",
+    "href": "/v2/networks/bicincitta-pizzighettone-formigara",
+    "id": "bicincitta-pizzighettone-formigara",
+    "city": "Pizzighettone e Formigara",
+    "country": "IT",
+    "latitude": 45.186748819167434,
+    "longitude": 9.778087948479424,
+    "name": "Bicincittà",
+    "source": "https://www.bicincitta.com/frmLeStazioni.aspx?ID=209"
+    },
+    {
+    "company":
+    "The National Transport Authority",
+    "href": "/v2/networks/cork",
+    "id": "cork",
+    "city": "Cork",
+    "country": "IE",
+    "latitude": 51.893604,
+    "longitude": -8.494174,
+    "name": "Coca-Cola Zero® Bikes"
+    },
+    {
+    "company":
+    "The National Transport Authority",
+    "href": "/v2/networks/limerick",
+    "id": "limerick",
+    "city": "Limerick",
+    "country": "IE",
+    "latitude": 52.668746,
+    "longitude": -8.627809,
+    "name": "Coca-Cola Zero® Bikes"
+    },
+    {
+    "company":
+    "BTS Group Holdings",
+    "href": "/v2/networks/punpunbikeshare",
+    "id": "punpunbikeshare",
+    "city": "Bangkok",
+    "country": "TH",
+    "latitude": 13.75,
+    "longitude": 100.516667,
+    "name": "Pun Pun Bike Share"
+    },
+    {
+    "company":
+    "The National Transport Authority",
+    "href": "/v2/networks/galway",
+    "id": "galway",
+    "city": "Galway",
+    "country": "IE",
+    "latitude": 53.2783491544,
+    "longitude": -9.05069143207,
+    "name": "Coca-Cola Zero® Bikes"
+    },
+    {
+    "company":
+    "Bike U Sp. z o.o.",
+    "href": "/v2/networks/bbbike",
+    "id": "bbbike",
+    "city": "Bielsko-Biała",
+    "country": "PL",
+    "latitude": 49.8225,
+    "longitude": 19.044444,
+    "name": "BBBike"
+    },
+    {
+    "company":
+    "Comunicare S.r.l.",
+    "href": "/v2/networks/bicincitta-montecatini-terme",
+    "id": "bicincitta-montecatini-terme",
+    "city": "Montecatini Terme",
+    "country": "IT",
+    "latitude": 43.88362791665083,
+    "longitude": 10.764385656591799,
+    "name": "Bicincittà",
+    "source": "https://www.bicincitta.com/frmLeStazioni.aspx?ID=210"
+    },
+    {
+    "company":
+    "Bike U Sp. z o.o.",
+    "href": "/v2/networks/bikeu-bra",
+    "id": "bikeu-bra",
+    "city": "Bydgoszcz",
+    "country": "PL",
+    "latitude": 53.12193,
+    "longitude": 18.00038,
+    "name": "Bydgoski rower aglomeracyjny"
+    },
+    {
+    "company":
+    "PBSC",
+    "href": "/v2/networks/santander-cycles",
+    "id": "santander-cycles",
+    "city": "London",
+    "country": "GB",
+    "latitude": 51.51121389999999,
+    "longitude": -0.1198244,
+    "name": "Santander Cycles"
+    },
+    {
+    "company":
+    "PBSC",
+    "gbfs_href": "https://asp.publicbikesystem.net/ube/gbfs/v1/gbfs.json",
+    "href": "/v2/networks/we-cycle",
+    "id": "we-cycle",
+    "city": "Aspen, CO",
+    "country": "US",
+    "latitude": 39.194951,
+    "longitude": -106.837002,
+    "name": "WE-cycle"
+    }
+]
+}

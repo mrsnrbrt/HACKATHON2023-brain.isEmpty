@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="png" href="favicon.png">
+	<meta charset="utf-8">
+	<title>CityBike</title>
+	<style>
+		body {
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		min-height: 100vh;
+    		background: linear-gradient(to right, #00aaff, #00ffaa);
+    		background-size: 400% 400%;
+    		animation: gradient 10s ease infinite;
+  		}
+  
+  		@keyframes gradient {
+    		0% {
+      		background-position: 0% 50%;
+    		}
+    		50% {
+      		background-position: 100% 50%;
+    		}
+    		100% {
+      		background-position: 0% 50%;
+    		}
+  		}
+
+
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 20px;
+		}
+
+		th, td {
+			padding: 10px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+
+		th {
+			background-color: #4CAF50;
+			color: white;
+			font-weight: normal;
+		}
+
+		tr:hover td {
+			background-color: #f5f5f5;
+		}
+
+		.select-wrapper {
+			margin-bottom: 20px;
+		}
+
+		.select-wrapper select {
+			padding: 5px;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			background-color: #f5f5f5;
+			margin-right: 10px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>NHL Teams</h1>
+
+		<!-- Adatok lekérdezése alapján választható adatkategóriák -->
+		<div class="select-wrapper">
+			<label for="select-data">Sort: </label>
+			<select id="select-data">
+				<option value="name">Name</option>
+				<option value="abbreviation">Abbreviation</option>
+				<option value="teamName">TeamName</option>
+				<option value="locationName">LocationName</option>
+				<option value="firstYearOfPlay">FirstYearOfPlay</option>
+                <option value="shortName">ShortName</option>
+            </select>
+		</div>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Abbreviation</th>
+					<th>TeamName</th>
+					<th>LocationName</th>
+					<th>FirstYearOfPlay</th>
+                    <th>ShortName</th>
+				</tr>
+			</thead>
+			<tbody id="team-list">
+			</tbody>
+		</table>
+	</div>
+
+	<script>
+		// JSON adatok betöltése
+		fetch('hoki.json')
+// Az adatok elérése
+.then(response => response.json())
+.then(json => {
+    console.log(json);
+// Alapértelmezett adatkategória beállítása
+let selectedData = 'name';
+		
+
+		// Az adatok alapján táblázat generálása
+		function renderTable(json, selectedData) {
+			// Táblázat tartalmának ürítése
+			document.getElementById('team-list').innerHTML = '';
+
+			// Adatok végigjárása és sorok hozzáadása a táblázathoz
+			json.teams.forEach(team => {
+				const row = document.createElement('tr');
+				row.innerHTML = `
+					<td>${team.name}</td>
+					<td>${team.abbreviation}</td>
+					<td>${team.teamName}</td>
+                    <td>${team.locationName}</td>
+					<td>${team.firstYearOfPlay}</td>
+					<td>${team.shortName}</td>
+				`;
+				document.getElementById('team-list').appendChild(row);
+			});
+		}
+
+		// A legördülő menü változtatása esetén az adatok frissítése
+		document.getElementById('select-data').addEventListener('change', function() {
+			selectedData = this.value;
+			renderTable(json, selectedData);
+		});
+		// Táblázat inicializálása
+		renderTable(json, selectedData);
+	})
+	.catch(error => console.error(error));
+</script>
+</body>
+</html>
